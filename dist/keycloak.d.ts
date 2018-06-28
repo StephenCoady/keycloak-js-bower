@@ -479,5 +479,7 @@ declare namespace Keycloak {
 		 * @private Undocumented.
 		 */
 		loadUserInfo(): KeycloakPromise<{}, void>;
+
+		processInit(): KeycloakPromise<{}, void>;
 	}
 }
