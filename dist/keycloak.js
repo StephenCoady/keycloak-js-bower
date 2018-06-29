@@ -172,9 +172,9 @@
                 console.log("[kc] callbackUrl : " + callbackUrl);
                 var callback = parseCallback(callbackUrl);
 
-                if (callback) {
-                    window.history.replaceState({}, null, callback.newUrl);
-                }
+                // if (callback) {
+                //     window.history.replaceState({}, null, callback.newUrl);
+                // }
 
                 if (callback && callback.valid) {
                     return setupCheckLoginIframe().success(function () {
